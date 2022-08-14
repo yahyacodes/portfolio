@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@200&family=IBM+Plex+Mono:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap");
+
+:root {
+  --header-color--: #ff8433;
+  --header-font-family--: "Rubik Marker Hatch", cursive;
+  --name-font-family--: "IBM Plex Mono", monospace;
+  --body-font-family--: "Epilogue", sans-serif;
+  --hero-font-size--: 60px;
+  --body-color--: #fff;
+  --body-font-size: 17px;
+  --hover-background-color--: #ff8433;
+  --hover-color--: #270c03;
+  --button-font-size--: 20px;
+  --button-color--: #ff8433;
+  --button-border-bottom-right-radius--: 0;
+  --button-border-top-left-radius--: 0;
+  --button-padding--: 5px 30px;
+  --button-hover-padding--: 5px 30px;
+  --navbar-color--: #fff;
+  --navbar-text-decoration--: underline;
+  --navbar-text-decoration-color--: var(--button-color--);
+}
+
+body {
+  background-image: url(portfoliobackground.jpg);
+  background-size: cover;
+}
+
+#navbar {
+  color: var(--navbar-color--);
+  text-decoration: var(--navbar-text-decoration--);
+  text-decoration-color: var(--navbar-text-decoration-color--);
+  font-size: 22px;
+}
+
+#nav-list {
+  color: var(--navbar-color--);
+  font-family: var(--body-font-family--);
+  border-bottom: 2px solid #ff8433;
+}
+
+#footer-list {
+  color: var(--navbar-color--);
+  font-family: var(--body-font-family--);
+  text-decoration: none;
+}
+#mini-footer {
+  background-color: var(--button-color--);
+  height: 30px;
+  width: 100%;
+}
+
+#copy {
+  color: var(--header-color--);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#nav-list:hover,
+#navbar:hover {
+  background-color: #ff8433;
+  color: #270c03;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-decoration: underline;
+  text-decoration-color: #270c03;
+  text-transform: uppercase;
+}
+
+#arrow {
+  color: var(--button-color--);
+}
+
+#name {
+  color: var(--body-color--);
+  font-family: var(--name-font-family--);
+}
+
+#footer-name {
+  color: var(--body-color--);
+  font-family: var(--name-font-family--);
+}
+
+#head {
+  font-family: var(--header-font-family--);
+  font-size: var(--hero-font-size--);
+  color: var(--header-color--);
+}
+
+#footer {
+  background-color: #1f1f23;
+}
+
+#clearfix {
+  color: var(--header-color--);
+}
+
+#footer-head {
+  font-family: var(--header-font-family--);
+  font-size: 40px;
+  color: var(--header-color--);
+}
+
+#header {
+  font-family: var(--body-font-family--);
+  color: var(--header-color--);
+  font-size: 40px;
+  text-decoration: var(--navbar-text-decoration--);
+  text-decoration-color: var(--navbar-text-decoration-color--);
+  width: 250px;
+  cursor: pointer;
+}
+
+#header:hover {
+  background-color: #ff8433;
+  color: #270c03;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-decoration: underline;
+  text-decoration-color: #270c03;
+  text-transform: uppercase;
+  padding: 2px 2px;
+}
+
+#cards {
+  background-color: #1f1f23;
+  width: 27rem;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -webkit-box-shadow: -8px 10px 0px 0px rgba(255, 132, 51, 1);
+  -moz-box-shadow: -8px 10px 0px 0px rgba(255, 132, 51, 1);
+  box-shadow: -8px 10px 0px 0px rgba(255, 132, 51, 1);
+}
+
+#input {
+  background-color: var(--body-color--);
+  border: none;
+  border-bottom: 2px solid #ff8433;
+}
+
+#textarea {
+  background-color: var(--body-color--);
+  border: none;
+  border-bottom: 2px solid #ff8433;
+  height: 100px;
+}
+
+#input:active,
+#textarea:active {
+  border: var(--button-color--);
+}
+
+#input:hover,
+#textare:hover {
+  border: var(--button-color--);
+}
+
+#project-cards {
+  background-color: #1f1f23;
+  width: 27rem;
+}
+
+#card-header {
+  color: var(--header-color--);
+  font-size: var(--body-font-size);
+  font-family: var(--body-font-family--);
+}
+
+#card-text {
+  color: var(--body-color--);
+  font-size: var(--body-font-size);
+  font-family: var(--body-font-family--);
+}
+
+#sentence {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--body-font-size);
+  color: var(--body-color--);
+}
+
+#connect {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--header-color--);
+  font-size: 50px;
+}
+
+#sentence span {
+  color: var(--header-color--);
+}
+
+#button {
+  border-bottom-right-radius: var(--button-border-bottom-right-radius--);
+  border-top-left-radius: var(--button-border-top-left-radius--);
+  padding: var(--button-padding--);
+  color: var(--button-color--);
+  border-color: var(--button-color--);
+  font-size: var(--button-font-size--);
+}
+
+#toggle {
+  color: var(--button-color--);
+}
+
+#toggle:hover {
+  background-color: var(--button-color--);
+  color: #270c03;
+}
+
+#button:hover {
+  background-color: var(--button-color--);
+  color: #270c03;
+}
+
+#social {
+  color: var(--button-color--);
+  font-size: var(--body-font-size);
+  cursor: pointer;
+}
+
+#link {
+  color: var(--header-color--);
+  text-decoration: none;
+}
+
+#skills-image {
+  width: 150px;
+}
+
+#skills-names {
+  color: var(--body-color--);
+}
+
+@media screen and (max-width: 400px) {
+  #cards {
+    width: auto;
+  }
+
+  #button {
+    padding: 5px 5px;
+  }
+
+  @media screen and (max-width: 400px) {
+    #project-cards {
+      width: auto;
+    }
+  }
+}
