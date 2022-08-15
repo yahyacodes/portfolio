@@ -136,32 +136,30 @@ body {
   box-shadow: -8px 10px 0px 0px rgba(255, 132, 51, 1);
 }
 
-.modal-content {
-  background-color: #1f1f23;
-  border-bottom-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  -webkit-box-shadow: -8px 10px 0px 0px rgba(255, 132, 51, 1);
-  -moz-box-shadow: -8px 10px 0px 0px rgba(255, 132, 51, 1);
-  box-shadow: -8px 10px 0px 0px rgba(255, 132, 51, 1);
-}
-
 #input {
-  background-color: var(--body-color--);
+  background-color: #1f1f23;
   border: none;
   border-bottom: 2px solid #ff8433;
+  color: var(--header-color--);
+}
+
+#input:focus,
+#textarea:focus {
+  color: var(--header-color--);
+  border: 2px solid var(--button-color--);
+}
+
+#input::placeholder,
+#textarea::placeholder {
+  color: var(--header-color--);
 }
 
 #textarea {
-  background-color: var(--body-color--);
+  background-color: #1f1f23;
   border: none;
   border-bottom: 2px solid #ff8433;
   height: 100px;
-}
-
-#input:active,
-#textarea:active {
-  border: var(--button-color--);
+  color: var(--header-color--);
 }
 
 #input:hover,
@@ -203,9 +201,6 @@ body {
 }
 
 #button,
-#modal-toggle,
-#btn-close,
-#close,
 #send {
   border-bottom-right-radius: var(--button-border-bottom-right-radius--);
   border-top-left-radius: var(--button-border-top-left-radius--);
@@ -230,7 +225,7 @@ body {
 }
 
 #button:hover,
-#modal-toggle:hover {
+#send:hover {
   background-color: var(--button-color--);
   color: #270c03;
 }
@@ -260,12 +255,12 @@ body {
   }
 
   #button,
-  #modal-toggle {
+  #send {
     padding: 5px 5px;
   }
 
   #button:hover,
-  #modal-toggle:hover {
+  #send:hover {
     background-color: var(--button-color--);
     color: #270c03;
   }
