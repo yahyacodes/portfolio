@@ -12,7 +12,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -23,8 +30,8 @@
         <button class="btn btn-outline navbar-toggler" id="button">
           <i class="bi bi-list" id="toggle"></i>
         </button>
-        <div class="collapse navbar-collapse justify-content-end">
-          <ul class="navbar-nav sm-auto">
+        <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+          <ul class="navbar-nav sm-text-center">
             <li class="nav-item mx-3">
               <a href="#hero" class="nav-link" id="nav-list">Home</a>
             </li>
@@ -48,22 +55,23 @@
 
     <section class="p-5 mt-5 text-center pb-5 mb-5" id="hero">
       <div class="container mt-5">
-        <h1 id="name">Yahya Burhan</h1>
-        <p class="pb-0" id="head">Frontend Developer</p>
-        <p class="pb-0" id="sentence">
+        <h1 id="name" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">Yahya Burhan</h1>
+        <p class="pb-0" data-aos="fade-left" data-aos-duration="1000" id="head">Frontend Developer</p>
+        <p class="pb-0" data-aos="fade" data-aos-duration="800" data-aos-delay="200" id="sentence">
           Frontend Developer who will bring your ideas into life, <br />
           an ethusiastic, innovative and critical thinker.
         </p>
-        <a href="https://github.com/yahyacodes" target="_blank">
-          <i class="bi bi-github" id="social"></i> </a>
+        <a href="https://github.com/yahyacodes" target="_blank" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">
+          <i class="bi bi-github" id="social" ></i> </a>
         </a>
-        <i class="bi bi-linkedin ms-2" id="social"></i>
-        <i class="bi bi-twitter ms-2" id="social"></i>
-        <a href="https://www.instagram.com/yz.codes/" target="_blank"
-          ><i class="bi bi-instagram ms-2" id="social"></i>
+        <i class="bi bi-linkedin ms-2" id="social" data-aos="fade" data-aos-duration="1000" data-aos-delay="400"></i>
+        <a href="https://twitter.com/Yahya_Burhan22" target="_blank" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">
+          <i class="bi bi-twitter ms-2" id="social" ></i> </a>
+        <a href="https://www.instagram.com/yz.codes/" target="_blank" data-aos="fade" data-aos-duration="1000" data-aos-delay="400"
+          ><i class="bi bi-instagram ms-2" id="social" ></i>
         </a>
 
-        <button class="btn btn-outline ms-5" id="button">
+        <button class="btn btn-outline ms-5" id="modal-toggle" data-aos="fade-left" data-aos-duration="1000">
           Contact me
         </button>
       </div>
@@ -73,11 +81,11 @@
       <div class="container mt-5">
         <div class="row">
           <div class="col">
-            <h1 class="fw-bold mt-5 text-center" id="header">About me</h1>
-            <div class="card mt-5 d-sm-flex" id="cards">
+            <h1 class="fw-bold mt-5 text-center" id="header" data-aos="fade-right" data-aos-duration="1000">About me</h1>
+            <div class="card mt-5 d-sm-flex" id="cards" data-aos="fade-right" data-aos-duration="1000">
               <div class="card-body">
-                <h5 class="card-title fw-bold" id="card-header">This is,</h5>
-                <p class="card-text ms-2" id="card-text">
+                <h5 class="card-title fw-bold" id="card-header"  data-aos="fade" data-aos-duration="800" data-aos-delay="400">This is,</h5>
+                <p class="card-text ms-2" id="card-text"  data-aos="fade" data-aos-duration="800" data-aos-delay="400">
                  Yahya Burhan, Frontend Developer, a rousing one  
                   who will take your web experince to the next level. An imaginative and innovative developer. 
                   One of the things I love about this tech field is the team work. I have worked in different 
@@ -92,19 +100,19 @@
                   many research. Now am in this field for six months and can alot more. My goal is to 
                 become a senior developer one day.</p>
                 <div class="text-center">
-                  <button class="btn btn-outline ms-5" id="button">
+                  <a href="#contact"> <button class="btn btn-outline ms-5" id="button">
                     Contact me
-                  </button>
+                  </button> </a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="col ms-5 mt-5">
-            <h1 class="fw-bold ms-5 text-center" id="header">Skills</h1>
-            <p class="mt-5" id="sentence">Am good with but <span>not limited</span> to these skills</p>
+            <h1 class="fw-bold ms-5 text-center" id="header" data-aos="fade-left" data-aos-duration="1000">Skills</h1>
+            <p class="mt-5" id="sentence"  data-aos="fade" data-aos-duration="800" data-aos-delay="200">Am good with but <span>not limited</span> to these skills</p>
 
-            <div class="mt-5 ms-5">
+            <div class="mt-5 ms-5" data-aos="fade-left" data-aos-duration="1000">
               <div class="row">
                 <div class="col">
                   <p class="pb-0 mb-0 ms-5" id="skills-names">HTML</p>
@@ -138,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div class="text-center mt-5">
+            <div class="text-center mt-5" data-aos="fade" data-aos-duration="1000" data-aos-delay="400">
               <button class="btn btn-outline mt-5" id="button">
                 <i class="bi bi-filetype-txt"></i>
                 Resume
@@ -151,10 +159,10 @@
 
     <section class="pt-5 mt-5" id="projects">
       <div class="container">
-        <h1 class="fw-bold mt-2 text-center" id="header">Projects</h1>
-        <p id="sentence">Here are some projects I worked on.</p>
+        <h1 class="fw-bold mt-2 text-center" id="header" data-aos="fade-right" data-aos-duration="1000">Projects</h1>
+        <p id="sentence" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">Here are some projects I worked on.</p>
         <div class="row">
-          <div class="col ms-5">
+          <div class="col ms-5" data-aos="fade-right" data-aos-duration="1000">
             <div class="card mt-5" id="project-cards">
               <img src="expensetracker.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -184,7 +192,7 @@
             </div>
           </div>
 
-          <div class="col ms-5">
+          <div class="col ms-5" data-aos="fade-left" data-aos-duration="1000">
             <div class="card mt-5" id="project-cards">
               <img src="advicegenerator.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -215,7 +223,7 @@
           </div>
 
           
-          <div class="col ms-5">
+          <div class="col ms-5" data-aos="fade-right" data-aos-duration="1000">
             <div class="card mt-5" id="project-cards">
               <img src="tictactoegame.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -248,7 +256,7 @@
           </div>
 
           
-          <div class="col ms-5">
+          <div class="col ms-5" data-aos="fade-left" data-aos-duration="1000">
             <div class="card mt-5" id="project-cards">
               <img src="portfolioimage.png" class="card-img-top" alt="...">
               <div class="card-body">
@@ -283,20 +291,20 @@
 
     <section class="p-5 mt-5 sm-auto" id="contact">
       <div class="container mt-5">
-        <h1 class="fw-bold text-center" id="header">Contact me</h1>
+        <h1 class="fw-bold text-center" id="header" data-aos="fade-right" data-aos-duration="1000">Contact me</h1>
         <div class="row">
           <div class="col mt-5">
-            <p id="connect">
+            <p id="connect" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">
               If Not Now When? Let's <br> Connect Together!
             </p>
-            <p class="mt-5" id="sentence">
+            <p class="mt-5" id="sentence" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">
               Have project in my mind? If you would like to enquire or
               collaborate don't hesitate, <a href="#" id="link">Contact me</a>
               and I will respond as soon as possible
             </p>
           </div>
 
-          <div class="col mt-5 ms-5">
+          <div class="col mt-5 ms-5" data-aos="fade-left" data-aos-duration="1000">
             <div class="card" id="cards">
               <div class="card-body">
                 <div class="form-floating mb-3">
@@ -312,7 +320,7 @@
                   <label for="floatingTextarea">Message</label>
                 </div>
 
-                <button class="btn btn-outline mt-5" id="button">
+                <button class="btn btn-outline mt-5" id="send">
                   <i class="bi bi-send"></i>
                   Send Message
                 </button>
@@ -327,28 +335,28 @@
       <div class="container text-center text-md-left">
         <div class="row">
           <div class="col-md-6 mt md-0 mt-3">
-            <h1 id="footer-name">Yahya Burhan</h1>
-            <p class="pb-0" id="footer-head">Frontend Developer</p>
+            <h1 id="footer-name" data-aos="fade-down" data-aos-duration="1000">Yahya Burhan</h1>
+            <p class="pb-0" id="footer-head" data-aos="fade-up" data-aos-duration="1000">Frontend Developer</p>
           </div>
           <hr class="clearfix w-100 d-md-none pb-3" id="clearfix">
           <div class="col-md-3 mb-md-0 pb-3">
-            <ul class="list-unstyled">
+            <ul class="list-unstyled mt-5">
               <li class="text-decoration-none">
-                <a href="#" class="mt-5"  id="footer-list">Home</a>
+                <a href="#hero" class="mt-5"  id="footer-list" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">Home</a>
               </li>
               <li class="text-decoration-none">
-                <a href="#" class="mt-5"  id="footer-list">About</a>
+                <a href="#about" class="mt-5"  id="footer-list" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">About</a>
               </li>
               <li class="text-decoration-none">
-                <a href="#" class="mt-5"  id="footer-list">Projects</a>
+                <a href="#projects" class="mt-5"  id="footer-list" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">Projects</a>
               </li>
               <li class="text-decoration-none">
-                <a href="#" class="mt-5"  id="footer-list">Contact</a>
+                <a href="#contact" class="mt-5"  id="footer-list" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">Contact</a>
               </li>
             </ul>
           </div>
           <hr class="clearfix w-100 d-md-none pb-3" id="clearfix">
-          <div class="col-md-3 mb-md-0 pb-3 pt-5 mt-4">
+          <div class="col-md-3 mb-md-0 pb-3 pt-5 mt-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
             <a href="https://github.com/yahyacodes" target="_blank">
               <i class="bi bi-github" id="social"></i> </a>
             </a>
@@ -358,11 +366,6 @@
               ><i class="bi bi-instagram ms-3" id="social"></i>
             </a>
           </div>
-        </div>
-        <div class="row mt-5 pt-5">
-          <div class="col">
-            <p class="fw-bold" id="copy">&copy;yahyacodes</p>
-          </div>
           <div class="col">
             <a href="#" class="d-flex flex-row-reverse">
               <i class="bi bi-arrow-up-circle h1" id="arrow"></i>
@@ -371,5 +374,50 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal mt-5 pt-5" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="header">Contact me</h5>
+            <button class="btn btn-outline" id="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="bi bi-x"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="input" placeholder="Name">
+              <label for="floatingInput">Names</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="input" placeholder="Email Address">
+              <label for="floatingPassword">Email Address</label>
+            </div>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="textarea"></textarea>
+              <label for="floatingTextarea">Message</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline mx-5" id="close" data-bs-dismiss="modal">
+             <i class="bi bi-x"></i>
+              Close</button>
+            <button class="btn btn-outline" id="send">
+              <i class="bi bi-send"></i>
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('.navbar-toggler').click(function () {
+        $('#navmenu').toggle()
+      })
+      $('#navmenu').click(function () {
+        $('#navmenu').hide()
+        })
+    </script>
   </body>
 </html>
