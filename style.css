@@ -263,7 +263,7 @@ body {
   height: 1px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 375px) {
   #cards {
     width: auto;
   }
