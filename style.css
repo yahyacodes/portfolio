@@ -263,14 +263,14 @@ body {
   height: 1px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
   #cards {
     width: auto;
   }
 
   #button,
   #send {
-    padding: 5px 5px;
+    padding: 2px 2px;
   }
 
   #button:hover,
