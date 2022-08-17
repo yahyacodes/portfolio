@@ -282,4 +282,8 @@ body {
   #project-cards {
     width: auto;
   }
+
+  #head {
+    font-size: 55px;
+  }
 }
