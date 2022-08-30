@@ -190,6 +190,12 @@ body {
   color: var(--body-color--);
 }
 
+#hero-sentence {
+  font-family: "JetBrains Mono", monospace;
+  font-size: var(--body-font-size);
+  color: var(--body-color--);
+}
+
 #connect {
   font-family: "JetBrains Mono", monospace;
   color: var(--header-color--);
@@ -263,9 +269,18 @@ body {
   height: 1px;
 }
 
+/* #loading-page {
+  margin: 5rem auto;
+  background-color: #270c03;
+  border: 2px solid #ff8433;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 40rem;
+} */
+
 @media screen and (max-width: 400px) {
   #cards {
-    width: auto;
+    width: 20rem;
   }
 
   #button,
@@ -285,5 +300,17 @@ body {
 
   #head {
     font-size: 55px;
+  }
+
+  #sentence {
+    width: 250px;
+  }
+
+  #her0-sentence {
+    width: 300px;
+  }
+
+  #break {
+    display: none;
   }
 }

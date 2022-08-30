@@ -15,3 +15,9 @@ function clearFields() {
 document.querySelector("#send").addEventListener("click", function () {
   clearFields();
 });
+
+window.onresize = function (event) {};
+
+// $(window).on("load", function () {
+//   $("#loading-page").fadeOut(5000);
+// });
