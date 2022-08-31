@@ -71,7 +71,7 @@ body {
 }
 
 #arrow {
-  color: var(--button-color--);
+  color: #1f1f23;
 }
 
 #name {
@@ -269,16 +269,18 @@ body {
   height: 1px;
 }
 
-/* #loading-page {
-  margin: 5rem auto;
-  background-color: #270c03;
-  border: 2px solid #ff8433;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 40rem;
-} */
+#below-footer {
+  background-color: #ff8433;
+}
 
-@media screen and (max-width: 400px) {
+#below-sentence {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  color: #1f1f23;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
   #cards {
     width: 20rem;
   }
